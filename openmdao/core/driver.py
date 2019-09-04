@@ -579,7 +579,7 @@ class Driver(object):
             indices = slice(None)
 
         if name in self._designvars_discrete:
-            problem.model._discrete_outputs[name] = int(value)
+            problem.model._discrete_outputs[name] = value
 
         else:
             desvar = problem.model._outputs._views_flat[name]
